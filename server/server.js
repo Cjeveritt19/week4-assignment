@@ -16,7 +16,7 @@ app.get("/", function(req, res) {
     res.json({message: "Welcome to the server. GET comfy" });
 });
 
-app.get("/Guestbook", async (_, res) => {
+app.get("/GuestBook", async (_, res) => {
     const query = await  db.query(`select * from GuestBook`)
     console.log(query);
     res.json(query.rows);
