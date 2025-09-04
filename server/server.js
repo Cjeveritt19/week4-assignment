@@ -16,16 +16,16 @@ app.get("/", function(req, res) {
     res.json({message: "Welcome to the server. GET comfy" });
 });
 
-app.get("/GuestBook", async (_, res) => {
-    const query = await  db.query(`select * from GuestBook`)
+app.get("/guestbook", async (_, res) => {
+    const query = await  db.query(`select * from guestbook`)
     console.log(query);
     res.json(query.rows);
 });
 
-app.post("/add-GuestBook", (req, res) => {
-    const newGuestBook = req.body.formValues;
+app.post("/add-guestbook", (req, res) => {
+    const newGuestbook = req.body.formValues;
     const query = db.query(
-        `insert into GuestBook (name, email, reason, number) values ($1, $2, $3, $4)`,
+        `INSERT INTO guestbook (name, email, reason, number) values ($1, $2, $3, $4)`,
         [newGuestBook.name, newGuestBook.email, newGuestBook.reason, newGuestBook.number]);
     res.json("Data sent", query);
 });
