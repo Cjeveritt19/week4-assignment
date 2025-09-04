@@ -1,11 +1,11 @@
-import express from "express";
+import express, { request, response} from "express";
 import cors from "cors";
-import { db } from "./dbConnection";
+import { db } from "./dbConnection.js";
 
-const app = express
+const app = express();
 
-app.request(cors());
-app.request(express.json());
+app.use(cors());
+app.use(express.json());
 
 const PORT = 8080;
 app.listen(PORT, function() {
