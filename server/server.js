@@ -20,7 +20,7 @@ app.get("/", function(req, res) {
 app.post("/add-GuestBook", (req, res) => {
     const newGuestBook = req.body.formValues;
     const query = db.query(
-        `inster into GuestBook (name, email, reason, number) values ($1, $2, $3, $4)`,
+        `insert into GuestBook (name, email, reason, number) values ($1, $2, $3, $4)`,
         [newGuestBook.name, newGuestBook.email, newGuestBook.reason, newGuestBook.number]);
         res.json("Data sent", query);
 });
