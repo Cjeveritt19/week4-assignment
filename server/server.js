@@ -29,3 +29,9 @@ app.post("/add-guestbook", (req, res) => {
         [newGuestbook.formValues.name, newGuestbook.formValues.email, newGuestbook.formValues.reason, newGuestbook.formValues.number]);
     res.json("Data sent", query);
 });
+
+app.get("/guestbook", async (_,res) => {
+    const query = await db.query (`select name, email from guestbook;`)
+    console.log(query);
+    res.json(query.rows);
+});
