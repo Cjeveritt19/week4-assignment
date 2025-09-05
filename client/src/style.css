@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 body {
-  background-color: peru;
+  background-color: pink;
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
