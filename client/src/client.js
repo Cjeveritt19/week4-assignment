@@ -1,6 +1,6 @@
-const guestFrom = document.getElementById("guest-form");
+const guestForm = document.getElementById("guest-form");
 
-guestFrom.addEventListener("submit", handleSubmit);
+guestForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
     event.preventDefault();
