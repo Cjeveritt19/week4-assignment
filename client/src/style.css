@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   
-  background-image: url("hotel.jpeg");
+  background-image: url("hotel-outdoors.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,4 +24,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
