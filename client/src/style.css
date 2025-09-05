@@ -13,6 +13,7 @@ h1 {
 
 .guest-form {
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
