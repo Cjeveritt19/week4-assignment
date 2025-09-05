@@ -1,8 +1,10 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 body {
-background-color: peru;
-box-sizing: content-box;
+  background-color: peru;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
 }
 
 
