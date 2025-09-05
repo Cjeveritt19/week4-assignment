@@ -23,9 +23,9 @@ app.get("/guestbook", async (_, res) => {
 });
 
 app.post("/add-guestbook", (req, res) => {
-    const newGuestbook = req.body.formValues;
+    const newGuestbook = req.body;
     const query = db.query(
         `INSERT INTO guestbook (name, email, reason, number) values ($1, $2, $3, $4)`,
-        [newGuestbook.name, newGuestbook.email, newGuestbook.reason, newGuestbook.number]);
+        [newGuestbook.formValues.name, newGuestbook.formValues.email, newGuestbook.formValues.reason, newGuestbook.formValues.number]);
     res.json("Data sent", query);
 });
