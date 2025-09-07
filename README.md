@@ -15,4 +15,4 @@ Can I please recieve feedback on the server and client files please.
 
 I struggled in regards to my server file being set up properly due to a Internal server error.I solved this with Manny, I had to change my connection string and add the password in again. I also struggled with setting up my GET API route. I have resolved this by alot of googling, asking others and a lot of looking at different code.
 
-Overall I think this may be my best assignment yet I am pleased with how it has come out.
+Overall I think this could have been one of my better assignments if I couldve got the GET API working on the client screen
