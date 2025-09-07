@@ -30,8 +30,8 @@ app.post("/add-guestbook", (req, res) => {
     res.json("Data sent", query);
 });
 
-app.get("/guestbook-name", async (_,res) => {
-    const query = await db.query (`select name, email from guestbook;`)
+app.get("/guestbook-entries", async (_,res) => {
+    const query = await db.query (`select name, email, reason, number from guestbook;`)
     console.log(query);
     res.json(query.rows);
 });

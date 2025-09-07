@@ -13,5 +13,6 @@ function handleSubmit(event) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({ formValues }),
-    });
+    })
 }
+
